@@ -1,0 +1,276 @@
+/* Default styles */
+.floating-social-container {
+    position: fixed;
+
+    z-index: 1000;
+}
+
+.floating-social-button {
+    background-color: #0073aa;
+    color: #fff;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.floating-social-buttons {
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    z-index: 999;
+}
+
+.right-0{
+    right: 0;
+}
+
+.left-0{
+    left: 0;
+}
+
+.container-left{
+    bottom: 20px;
+    left: 20px;
+}
+
+.container-right{
+    bottom: 20px;
+    right: 20px;
+}
+
+.floating-social-buttons-horizontal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+    bottom: 0px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    z-index: 999;
+}
+
+.floating-social-buttons.show {
+    display: block;
+}
+
+/* Styles for vertical display */
+.floating-social-container.vertical .floating-social-buttons {
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    z-index: 999;
+}
+
+.floating-social-container.vertical .floating-social-button {
+    background-color: #0073aa;
+    color: #fff;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+.social-icon i {
+    transform: scale(1);
+    transition: all 0.3s;
+}
+
+.social-icon i:hover {
+    transform: scale(1.3);
+    transition: all 0.3s;
+}
+
+
+
+/* SHae button designs 1-5 */
+/* General styles for the share buttons container */
+.fsb-share-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Regular Share Buttons with Icon & Name/Text */
+.fsb-share-buttons.design1 .fsb-share-icon {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+    text-decoration: none;
+    color: inherit;
+}
+
+.fsb-share-buttons.design1 .fsb-share-icon:hover {
+    background-color: #e0e0e0;
+    border-color: #ccc;
+    transform: scale(1.1);
+}
+
+/* Share Button with Name/Text Only (No Icon) */
+.fsb-share-buttons.design2 .fsb-share-icon {
+    padding: 6px;
+    margin: 0 5px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+    text-decoration: none;
+    color: inherit;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.fsb-share-buttons.design2 .fsb-share-icon i {
+    display: none;
+}
+
+.fsb-share-buttons.design2 .fsb-share-icon:hover {
+    background-color: #e0e0e0;
+    border-color: #ccc;
+    transform: scale(1.05);
+}
+
+/* Share Button with Icon Only */
+.fsb-share-buttons.design3 .fsb-share-icon {
+    /* padding: 6px; */
+    /* margin: 0 5px; */
+    /* border-radius: 50px; */
+    /* background-color: #f0f0f0; */
+    /* border: 1px solid #ddd; */
+    transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+    text-decoration: none;
+    color: inherit;
+}
+
+.fsb-share-buttons.design3 .fsb-share-icon span {
+    display: none;
+}
+
+.fsb-share-buttons.design3 .fsb-share-icon:hover {
+    /* background-color: #e0e0e0; */
+    /* border-color: #ccc; */
+    transform: scale(1.15);
+}
+
+/* Share Button with Icon and Name/Text Appearing on Hover */
+.fsb-share-buttons.design4 .fsb-share-icon {
+    padding: 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    overflow: hidden;
+}
+
+.fsb-share-buttons.design4 .fsb-share-icon span {
+    position: absolute;
+    left: 100%;
+    padding-left: 10px;
+    white-space: nowrap;
+    max-width: auto;
+    transition: left 0.6s;
+}
+
+.fsb-share-buttons.design4 .fsb-share-icon:hover span {
+    left: 0px;
+    position: relative;
+    width: auto;
+    
+}
+
+.fsb-share-buttons.design4 .fsb-share-icon:hover {
+    background-color: #e0e0e0;
+    border-color: #ccc;
+    /* transform: scale(1.1); */
+}
+
+/* Vertical Button */
+
+.fsb-share-buttons.design5 a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.fsb-share-buttons.design5 .fsb-share-icon {
+    padding: 6px;
+    margin: 5px 0;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.fsb-share-buttons.design5 .fsb-share-icon span{
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.fsb-share-buttons.design5 .fsb-share-icon:hover {
+    background-color: #e0e0e0;
+    border-color: #ccc;
+    transform: scale(1.1);
+}
+
+/* Font Awesome icon styles */
+.fsb-share-buttons .fsb-share-icon i {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+/* Styles for each specific platform (optional) */
+.fsb-share-buttons .fsb-share-icon.facebook i {
+    color: #3b5998;
+}
+
+.fsb-share-buttons .fsb-share-icon.twitter i {
+    color: #1da1f2;
+}
+
+.fsb-share-buttons .fsb-share-icon.linkedin i {
+    color: #0077b5;
+}
+
+.fsb-share-buttons .fsb-share-icon.pinterest i {
+    color: #bd081c;
+}
+
+.fsb-share-buttons .fsb-share-icon.reddit i {
+    color: #ff4500;
+}
+
+.fsb-share-buttons .fsb-share-icon.email i {
+    color: #666;
+}
