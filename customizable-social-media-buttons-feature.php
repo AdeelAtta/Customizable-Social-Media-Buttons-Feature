@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Customizable Social Media Buttons Feature
-Plugin URI: https://github.com/AdeelAtta/Simple-Social-Buttons-Feature
+Plugin URI: https://github.com/AdeelAtta/customizable-social-media-buttons-feature
 Description: Plugin to add Customized social media Buttons into the wordpress.
 Version: 1.0
 Author: Adeel Atta
